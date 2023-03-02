@@ -1,7 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/");
+  };
+
   return (
     <>
       <div>
@@ -10,7 +17,7 @@ const SignUp = () => {
       </div>
 
       <div className="login-form">
-        <form>
+        <form onSubmit={handleSubmit}>
           <h4 className="modal-title">Welcome back, Ouly.AI</h4>
           <p>Welcome! please enter your details.</p>
           <div className="row">
@@ -37,7 +44,7 @@ const SignUp = () => {
           <div className="form-group">
             <label className="form-label">Email</label>
             <input
-              type="text"
+              type="email"
               className="form-control"
               placeholder="Ouly12@gmail.com"
               required="required"
@@ -47,7 +54,7 @@ const SignUp = () => {
           <div className="form-group">
             <label className="form-label">Mobile No</label>
             <input
-              type="text"
+              type="number"
               className="form-control"
               placeholder="Enter Mobile No"
               required="required"
@@ -65,7 +72,7 @@ const SignUp = () => {
           </div>
 
           <div className="d-grid gap-2">
-            <button className="btn btn-primary text-white" type="button">
+            <button className="btn btn-primary text-white" type="submit">
               Sign up
             </button>
           </div>
