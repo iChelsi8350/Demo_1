@@ -4,6 +4,10 @@ body {
   font-family: "Source Sans Pro";
 }
 
+.error {
+  color: red;
+}
+
 .img1 {
   position: absolute;
   width: 500px;
