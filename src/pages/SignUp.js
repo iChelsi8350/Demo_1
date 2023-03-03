@@ -31,7 +31,13 @@ const SignUp = () => {
 
       <div className="login-form">
         <Formik
-          initialValues={{ email: "", password: "" }}
+          initialValues={{
+            firstname: "",
+            lastname: "",
+            email: "",
+            mobileno: "",
+            password: "",
+          }}
           onSubmit={(values) => {
             console.log(values);
             navigate("/");
