@@ -136,7 +136,7 @@ div.user-image {
 }
 #sidebar-nav {
   width: 106%;
-  height: 800px;
+  /* height: 800px; */
   padding: 20px 19px;
   background: #fff;
   border-right: 1px solid #e0e0e0;

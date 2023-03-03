@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
             </li>
             <li className="nav-profile">
               <div className="nav-profile-image">
-                <img src="/images/Rectangle 1899.png" alt="" />
+                <Image src="/images/Rectangle 1899.png" alt="" />
                 <div className="nav-profile-name">
                   AR Jakir <i className="fa fa-caret-down"></i>
                 </div>

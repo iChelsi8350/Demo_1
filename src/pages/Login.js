@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { Button, Image } from "react-bootstrap";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,9 +22,9 @@ const Login = () => {
 
   return (
     <>
-      <img className="img1" alt="" src="/images/Ellipse 2718.png" />
-      <img className="img2" alt="" src="/images/Ellipse 2721.png" />
-      <img className="img4" alt="" src="/images/Group 1000002089.png" />
+      <Image className="img1" alt="" src="/images/Ellipse 2718.png" />
+      <Image className="img2" alt="" src="/images/Ellipse 2721.png" />
+      <Image className="img4" alt="" src="/images/Group 1000002089.png" />
       <div className="login-form-container">
         <div className="login-form">
           <Formik
@@ -88,12 +89,13 @@ const Login = () => {
                     </Link>
                   </div>
                   <div className="d-grid gap-2">
-                    <button
-                      className="btn btn-primary text-white"
+                    <Button
+                      as="input"
+                      variant="primary"
+                      className="text-white"
                       type="submit"
-                    >
-                      Log in
-                    </button>
+                      value="Log in"
+                    />
                   </div>
                 </form>
               );

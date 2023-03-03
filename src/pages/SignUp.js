@@ -1,5 +1,6 @@
 import { Formik } from "formik";
 import React from "react";
+import { Button, FormControl, Image } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 
@@ -25,8 +26,8 @@ const SignUp = () => {
   return (
     <>
       <div>
-        <img className="img1" src="/images/Ellipse 2718.png" alt="" />
-        <img className="img2" src="/images/Ellipse 2721.png" alt="" />
+        <Image className="img1" src="/images/Ellipse 2718.png" alt="" />
+        <Image className="img2" src="/images/Ellipse 2721.png" alt="" />
       </div>
 
       <div className="login-form">
@@ -146,9 +147,13 @@ const SignUp = () => {
                 </div>
 
                 <div className="d-grid gap-2">
-                  <button className="btn btn-primary text-white" type="submit">
-                    Sign up
-                  </button>
+                  <Button
+                    as="input"
+                    variant="primary"
+                    className="text-white"
+                    type="submit"
+                    value="Sign up"
+                  />
                 </div>
               </form>
             );
@@ -160,7 +165,7 @@ const SignUp = () => {
       </div>
 
       <div>
-        <img className="img4" src="/images/Group 1000002089.png" alt="" />
+        <Image className="img4" src="/images/Group 1000002089.png" alt="" />
       </div>
     </>
   );
