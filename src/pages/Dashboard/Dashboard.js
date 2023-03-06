@@ -1,19 +1,12 @@
 import React, { useState } from "react";
-import { FileUploader } from "react-drag-drop-files";
 import { Link } from "react-router-dom";
+import DragDropFile from "../../components/DragDropFile";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
 const Dashboard = () => {
   const [showFilterModal, setShowFilterModal] = useState(false);
   const [showFileUploadModal, setShowFileUploadModal] = useState(false);
-  const [file, setFile] = useState(null);
-
-  const fileTypes = ["JPG", "PNG", "JPEG"];
-
-  const handleChange = (file) => {
-    setFile(file);
-  };
 
   return (
     <>
@@ -214,7 +207,11 @@ const Dashboard = () => {
                   <div className="row mt-4">
                     <div className="col-md-6">
                       <div className="d-grid gap-2">
-                        <button className="btn btn-outline-dark" type="button">
+                        <button
+                          className="btn btn-outline-dark"
+                          type="button"
+                          onClick={() => setShowFilterModal(false)}
+                        >
                           Cancle
                         </button>
                       </div>
@@ -243,22 +240,7 @@ const Dashboard = () => {
                   </Link>
                 </div>
               </div>
-
-              <div className="drop_box">
-                <input
-                  type="file"
-                  hidden
-                  accept=".doc,.docx,.pdf"
-                  id="fileID"
-                />
-
-                <FileUploader
-                  multiple={true}
-                  handleChange={handleChange}
-                  name="file"
-                  types={fileTypes}
-                />
-              </div>
+              <DragDropFile />
             </div>
           </div>
         </div>
