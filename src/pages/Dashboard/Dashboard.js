@@ -33,7 +33,7 @@ const Dashboard = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-md-10 box1">
-                    <div className="row">
+                    <div className="row w-100">
                       <div className="col-md-1 search">
                         <Link to="#">
                           <i className="fa fa-search"></i>
@@ -99,47 +99,49 @@ const Dashboard = () => {
               <div className="divider"></div>
               <div className="phone_body">
                 <form>
-                  <div className="form-check form-check-inline col-md-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox1"
-                      value="option1"
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox1"
-                    >
-                      2D Product
-                    </label>
-                  </div>
-                  <div className="form-check form-check-inline col-md-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox2"
-                      value="option2"
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox2"
-                    >
-                      3D Product
-                    </label>
-                  </div>
-                  <div className="form-check form-check-inline col-md-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      id="inlineCheckbox3"
-                      value="option3"
-                    />
-                    <label
-                      className="form-check-label"
-                      htmlFor="inlineCheckbox3"
-                    >
-                      With Icon
-                    </label>
+                  <div className="multiple-checkbox">
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox1"
+                        value="option1"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineCheckbox1"
+                      >
+                        2D Product
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox2"
+                        value="option2"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineCheckbox2"
+                      >
+                        3D Product
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox3"
+                        value="option3"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineCheckbox3"
+                      >
+                        With Icon
+                      </label>
+                    </div>
                   </div>
 
                   <h6 className="mt-3">Color</h6>
